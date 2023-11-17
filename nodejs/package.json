@@ -1,0 +1,17 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "this is the backend application exponsing a simple API which is consumed via destinations.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "akarsh sidhartha.",
+  "license": "ISC",
+  "dependencies": {
+    "cfenv": "^1.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.3"
+  }
+}
