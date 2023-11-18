@@ -5,14 +5,25 @@
 			<Page title="{i18n>title}">
 			
 			<List
-				items="{users>/}"
-				headerText="Usuarios">
+				items="{subscriptions>/}"
+				headerText="Listado de Suscripciones">
 			<ObjectListItem
-				title="{users>first_name}"
+				title="{subscriptions>id}"
 				type="Active"
 				press="onListItemPress"
 			>
+				<firstStatus>
+			<ObjectStatus
+					text="{subscriptions>status}"
+			 />
+			 
+						</firstStatus>
+				<ObjectAttribute text="{subscriptions>payer_first_name}" />
+			<ObjectAttribute text="{subscriptions>payment_method_id}" />
+				<ObjectAttribute text="{subscriptions>init_point}" />
+			
 			</ObjectListItem>
+			
 			</List>
 
 			</Page>
